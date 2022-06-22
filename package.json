@@ -4,18 +4,18 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:angular-main": "ng serve angular-main -o --port 4401",
-    "start:log-one": "ng serve log-one -o",
-    "start:catalog": "ng serve catalog",
     "build": "ng build",
+    "serve:dist-mf": "cd dist/mf-one && lite-server --port 3000",
+    "serve:shell": "cd dist/shell && lite-server --port 5000",
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js",
     "build:angular-element1": "ng build angular-element1",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
   "dependencies": {
-    "@angular-architects/module-federation": "^14.3.8",
-    "@angular-architects/module-federation-tools": "^14.3.8",
+    "@angular-architects/module-federation": "14.3.8",
+    "@angular-architects/module-federation-tools": "14.3.8",
     "@angular/animations": "~13.3.0",
     "@angular/cdk": "^13.3.9",
     "@angular/common": "~13.3.0",
@@ -26,7 +26,7 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
-    "ngx-build-plus": "13",
+    "ngx-build-plus": "13.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -43,8 +43,9 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "lite-server": "^2.6.1",
     "ng-packagr": "^13.0.0",
-    "ngx-build-plus": "^13.0.0",
+    "ngx-build-plus": "^14.0.0",
     "typescript": "~4.6.2"
   }
 }
