@@ -8,7 +8,7 @@
     "serve:dist-mf": "cd dist/mf-one && lite-server --port 3000",
     "serve:shell": "cd dist/shell && lite-server --port 5000",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js",
-    "build:angular-element1": "ng build angular-element1",
+    "build:mf-element": "ng build mf-element --common-chunk false --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -21,6 +21,7 @@
     "@angular/common": "~13.3.0",
     "@angular/compiler": "~13.3.0",
     "@angular/core": "~13.3.0",
+    "@angular/elements": "13",
     "@angular/forms": "~13.3.0",
     "@angular/material": "^13.3.9",
     "@angular/platform-browser": "~13.3.0",
