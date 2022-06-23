@@ -33,7 +33,7 @@ const routes: Routes = [
         exposedModule: './TwoModule',
       }).then((m) => m.TwoModule),
   },
-  // 组件
+  // 组件, 是不是不应该用路由的形式
   {
     path: 'four',
     component: WebComponentWrapper,

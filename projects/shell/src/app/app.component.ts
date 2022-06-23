@@ -9,9 +9,13 @@ import {Component} from '@angular/core';
 export class AppComponent {
   title = 'shell';
   itemOption: WebComponentWrapperOptions = {
+    // remoteEntry: 'http://localhost:4204/remoteEntry.js',
+    // remoteName: 'angular',
+    // exposedModule: './web-components',
+    // elementName: 'angular1-element1'
+    type: 'module',
     remoteEntry: 'http://localhost:4204/remoteEntry.js',
-    remoteName: 'angular',
-    exposedModule: './web-components',
+    exposedModule: './web-component',
     elementName: 'angular1-element1'
   };
 

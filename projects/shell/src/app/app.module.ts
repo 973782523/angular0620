@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // ModuleFederationToolsModule
+    ModuleFederationToolsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
