@@ -6,14 +6,24 @@ import {AppModule} from './app.module';
 
 const routes: Routes = [
   {path: '', loadChildren: () => import('./page/page.module').then(m => m.PageModule)},
+  // {
+  //   path: 'one',
+  //   loadChildren: () =>
+  //     loadRemoteModule({
+  //       type: 'manifest',
+  //       remoteName: 'mf-one',
+  //       exposedModule: './HomeModule',
+  //     }).then((m) => m.HomeModule),
+  // },
   {
     path: 'one',
-    loadChildren: () =>
-      loadRemoteModule({
-        type: 'manifest',
-        remoteName: 'mf-one',
-        exposedModule: './HomeModule',
-      }).then((m) => m.HomeModule),
+    component: WebComponentWrapper,
+    data: {
+      type: 'module',
+      remoteEntry: 'http://localhost:3001/remoteEntry.js',
+      exposedModule: './web-components',
+      elementName: 'react-element'
+    } as WebComponentWrapperOptions
   },
   {
     path: 'two',

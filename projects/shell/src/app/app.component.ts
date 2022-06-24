@@ -9,14 +9,16 @@ import {Component} from '@angular/core';
 export class AppComponent {
   title = 'shell';
   itemOption: WebComponentWrapperOptions = {
-    // remoteEntry: 'http://localhost:4204/remoteEntry.js',
-    // remoteName: 'angular',
-    // exposedModule: './web-components',
-    // elementName: 'angular1-element1'
     type: 'module',
-    remoteEntry: 'http://localhost:4204/remoteEntry.js',
-    exposedModule: './web-component',
-    elementName: 'angular1-element1'
+    // remoteEntry: 'http://localhost:4204/remoteEntry.js',
+    // exposedModule: './web-component', // 注意这个名字别写错啦
+    // elementName: 'angular1-element1',
+
+    // react
+    // remoteEntry: 'http://localhost:3001/remoteEntry.js',
+    remoteEntry: 'http://localhost:3200/angular0704v12/remoteEntry.js',
+    exposedModule: './web-components',
+    elementName: 'react-element'
   };
 
   ngOnInit() {
