@@ -574,7 +574,7 @@ module.exports = function (webpackEnv) {
         exposes: {
           './web-components': './src/App.js',
         },
-        shared: ["react", "react-dom"]
+        // shared: ["react", "react-dom"]
       }),
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
