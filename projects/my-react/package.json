@@ -60,7 +60,7 @@
     "start:react": "webpack serve --mode=development --devtool=source-map",
     "build:react": "webpack --mode=production",
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "node scripts/build.js",/*这个打包别用上面*/
     "test": "node scripts/test.js",
     "serve:react": "cd build && lite-server"
   },

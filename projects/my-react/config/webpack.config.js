@@ -574,6 +574,7 @@ module.exports = function (webpackEnv) {
         exposes: {
           './web-components': './src/App.js',
         },
+        // 这行是否可以去掉
         // shared: ["react", "react-dom"]
       }),
       // Generates an `index.html` file with the <script> injected.
